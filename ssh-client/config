@@ -1,4 +1,4 @@
-Host github.com-artilugio
+Host github.com-artilugio0
     HostName github.com
     User git
     IdentityFile ~/.ssh/github_artilugio0
