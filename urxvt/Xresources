@@ -1,0 +1,42 @@
+URxvt.font:     xft:bitstream vera sans mono:size=16:antialias=true
+URxvt.boldFont: xft:bitstream vera sans mono:bold:size=16:antialias=true
+URxvt.letterSpace: -1
+
+! Remove scrollbar
+URxvt.scrollBar: false
+
+! Terminal colors
+URxvt.foreground: #c0c0c0
+URxvt.background: #080810
+URxvt.cursorColor: #c0c0c0
+URxvt.color0: #151515
+URxvt.color1: #e54c4c
+URxvt.color2: #2f7d2f
+URxvt.color3: #9f9f5f
+URxvt.color4: #42a5f5
+URxvt.color5: #d74dba
+URxvt.color6: #55dbbe
+URxvt.color7: #c0c0c0
+URxvt.color8: #505050
+URxvt.color9: #e54c4c
+URxvt.color10: #378a52
+URxvt.color11: #9f9f5f
+URxvt.color12: #42a5f5
+URxvt.color13: #d74dba
+URxvt.color14: #55dbbe
+URxvt.color15: #f0f0f0
+
+! Perl extensions
+URxvt.perl-ext-common: default,resize-font
+
+! Disable ISO 14755 unicode input so we can use Ctrl-Shift bindings
+URxvt.iso14755:        false
+URxvt.iso14755_52:     false
+
+! Disable Ctrl-Alt-c & Ctrl-Alt-v bindings
+! URxvt.keysym.C-M-c:    builtin-string:
+! URxvt.keysym.C-M-v:    builtin-string:
+
+! Bind Ctrl-Shift-c & Ctrl-Shift-v to copy and paste
+URxvt.keysym.C-S-0x43: eval:selection_to_clipboard
+URxvt.keysym.C-S-0x56: eval:paste_clipboard
