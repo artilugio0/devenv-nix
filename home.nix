@@ -21,6 +21,7 @@
     firefox
     git
     tree
+    appimage-run
   ];
 
   home.file = {
