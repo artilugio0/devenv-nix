@@ -84,6 +84,13 @@
   services.spice-vdagentd.enable = true;
   services.qemuGuest.enable = true;
 
+  # make unpackaged dynamic linked programs work on nixos
+  # https://nix.dev/guides/faq.html#how-to-run-non-nix-executables
+  programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [
+    # Add any missing dynamic libraries for unpackaged programs
+  ];
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
