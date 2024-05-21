@@ -3,6 +3,7 @@
 {
   imports = [
     ./git.nix
+    ./golang.nix
     ./neovim.nix
     ./tmux.nix
     ./urxvt.nix
