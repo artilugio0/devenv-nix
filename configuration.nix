@@ -7,7 +7,8 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
+      ./hardware-configuration-virtualbox.nix
+      ./virtualbox.nix
     ];
 
   # Use the GRUB 2 boot loader.
@@ -17,7 +18,8 @@
   # boot.loader.efi.efiSysMountPoint = "/boot/efi";
   # Define on which hard drive you want to install Grub.
   boot.loader.grub.useOSProber = true;
-  boot.loader.grub.device = "/dev/vda"; # or "nodev" for efi only
+  # boot.loader.grub.device = "/dev/vda"; # or "nodev" for efi only
+  boot.loader.grub.device = "/dev/sda"; # virtualbox
 
   networking.hostName = "devenv"; # Define your hostname.
   # Pick only one of the below networking options.
