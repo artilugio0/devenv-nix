@@ -3,7 +3,9 @@
 {
   imports = [
     ./git.nix
+    ./foundry.nix
     ./golang.nix
+    ./haskell.nix
     ./neovim.nix
     ./tmux.nix
     ./urxvt.nix
