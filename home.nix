@@ -24,6 +24,7 @@
     firefox
     git
     tree
+    jq
     appimage-run
   ];
 
