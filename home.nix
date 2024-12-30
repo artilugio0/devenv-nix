@@ -13,7 +13,7 @@
   ];
 
   # do not touch without first reading the docs
-  home.stateVersion = "23.11";
+  home.stateVersion = "24.05";
 
   home.username = "user";
   home.homeDirectory = "/home/user";
