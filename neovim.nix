@@ -13,7 +13,7 @@
 
   home.file.".config/nvim.original".source = builtins.fetchGit {
     url = "https://github.com/artilugio0/neovim-config";
-    rev = "719aadbd9d9f32762d1ac225e3750eaa06866e72";
+    rev = "ab7f9a1329d0ab1d908087aabfc782ca5f19910c";
   };
   home.file.".config/nvim.original".onChange = ''
     $DRY_RUN_CMD test -d $HOME/.config/nvim && rm -fr $HOME/.config/nvim
