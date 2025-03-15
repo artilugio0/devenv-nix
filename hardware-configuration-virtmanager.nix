@@ -24,6 +24,18 @@
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
 
+  services.spice-vdagentd.enable = true;
   services.qemuGuest.enable = true;
-  services.spice-vdagentd.enable = true; # copy & paste
+
+  systemd.user.services.spice-vdagent-client = {
+    description = "spice-vdagent client";
+    wantedBy = [ "graphical-session.target" ];
+    serviceConfig = {
+      ExecStart = "${pkgs.spice-vdagent}/bin/spice-vdagent -x";
+      Restart = "on-failure";
+      RestartSec = "5";
+    };
+  };
+
+  systemd.user.services.spice-vdagent-client.enable = lib.mkDefault true;
 }

@@ -19,8 +19,8 @@
   # Define on which hard drive you want to install Grub.
   boot.loader.grub.useOSProber = true;
   # boot.loader.grub.device = "/dev/vda"; # or "nodev" for efi only
-  # boot.loader.grub.device = "/dev/sda"; # virtualbox
-  boot.loader.grub.device = "/dev/vda"; # virtmanager
+  #boot.loader.grub.device = "/dev/sda"; # virtualbox
+  boot.loader.grub.device = "/dev/vda"; # virt-manager
 
   networking.hostName = "devenv"; # Define your hostname.
   # Pick only one of the below networking options.
@@ -82,9 +82,6 @@
     nerdfonts
     powerline-fonts
   ];
-
-  services.spice-vdagentd.enable = true;
-  services.qemuGuest.enable = true;
 
   # make unpackaged dynamic linked programs work on nixos
   # https://nix.dev/guides/faq.html#how-to-run-non-nix-executables
