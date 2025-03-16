@@ -9,6 +9,7 @@
     ./tmux.nix
     ./urxvt.nix
     ./ssh-client.nix
+    ./virtmanager.nix
   ];
 
   # do not touch without first reading the docs
