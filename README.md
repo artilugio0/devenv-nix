@@ -42,3 +42,10 @@ Virtmanager configuration:
 Memory: Enable shared memory
 Video: VGA
 ```
+
+Upgrading the OS:
+1. Update ./flake.nix with the new `nixpkgs.url` and `home-manager.url` if necessary
+2. Run `nix flake update`
+3. Run `sudo nixos-rebuild switch --flake .`
+4. Run `home-manager switch --flake .#my-home-config`
+5. Reboot
