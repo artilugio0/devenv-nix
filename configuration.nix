@@ -79,7 +79,6 @@
     neovim
     wget
     spice-vdagent
-    nerdfonts
     powerline-fonts
   ];
 

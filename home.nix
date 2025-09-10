@@ -25,6 +25,7 @@
     tree
     jq
     appimage-run
+    kdePackages.okular
   ];
 
   home.file = {
