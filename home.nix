@@ -12,6 +12,7 @@
     ./tmux.nix
     ./urxvt.nix
     ./virtmanager.nix
+    ./zig.nix
   ];
 
   # do not touch without first reading the docs
