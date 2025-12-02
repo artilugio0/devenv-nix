@@ -2,13 +2,15 @@
 
 {
   imports = [
+    ./dlang.nix
     ./git.nix
     ./golang.nix
     ./haskell.nix
     ./neovim.nix
+    ./rust.nix
+    ./ssh-client.nix
     ./tmux.nix
     ./urxvt.nix
-    ./ssh-client.nix
     ./virtmanager.nix
   ];
 
